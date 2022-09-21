@@ -59,7 +59,7 @@ def kafedra(message):
     get_message_bot = message.text
     if get_message_bot == 'Axborot texnologiyalari':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=False, row_width=2, one_time_keyboard=True)
-        btn1 = types.KeyboardButton('Есбергенов Х')
+        btn1 = types.KeyboardButton('асс. Есбергенов Х.')
         btn2 = types.KeyboardButton('асс. Тлеуов К.')
 
         markup.add(btn1, btn2)
