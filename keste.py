@@ -6,7 +6,7 @@ from sabaq_joqpa import sabaq_joqpa
 
 def keste(topar, kurs):
 
-    ustin = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43]
+    ustin = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
     hapte_sanlari_1 = [8, 16, 24, 32, 40]
     hapte_sanlari_2 = [8, 16, 24, 32, 40]
     hapte_sanlari_3 = [7, 15, 23, 31, 39]
@@ -28,76 +28,88 @@ def keste(topar, kurs):
         q = ustin[2]
         barligi = '<b>1 DI (QQ) KESTESI: </b>\n'
 
-    if topar == '1 KT (qq)':
+    if topar == '1 MT (qq)':
         q = ustin[3]
+        barligi = '<b>1 MT (QQ) KESTESI: </b>\n'
+
+    if topar == '1 KT (qq)':
+        q = ustin[4]
         barligi = '<b>1 KT (QQ) KESTESI: </b>\n'
 
     if topar == '1 Tel (qq)':
-        q = ustin[4]
+        q = ustin[5]
         barligi = '<b>1 Tel (QQ) KESTESI: </b>\n'
 
     if topar == '1 AX (qq)':
-        q = ustin[5]
+        q = ustin[6]
         barligi = '<b>1 AX (QQ) KESTESI: </b>\n'
 
     if topar == '1 RI (qq)':
-        q = ustin[6]
+        q = ustin[7]
         barligi = '<b>1 RI (QQ) KESTESI: </b>\n'
 
     if topar == '1 KI (o\'zb)':
-        q = ustin[7]
+        q = ustin[8]
         barligi = '<b>1 KI (O\'ZB) KESTESI: </b>\n'
 
     if topar == '1 AT (o\'zb)':
-        q = ustin[8]
+        q = ustin[9]
         barligi = '<b>1 AT (O\'ZB) KESTESI: </b>\n'
 
     if topar == '1 DI (o\'zb)':
-        q = ustin[9]
+        q = ustin[10]
         barligi = '<b>1 DI (O\'ZB) KESTESI: </b>\n'
 
+    if topar == '1 MT (o\'zb)':
+        q = ustin[11]
+        barligi = '<b>1 MT (O\'ZB) KESTESI: </b>\n'
+
     if topar == '1 KT (o\'zb)':
-        q = ustin[10]
+        q = ustin[12]
         barligi = '<b>1 KT (O\'ZB) KESTESI: </b>\n'
 
     if topar == '1 Tel (o\'zb)':
-        q = ustin[11]
+        q = ustin[13]
         barligi = '<b>1 Tel (O\'ZB) KESTESI: </b>\n'
 
     if topar == '1 AX (o\'zb)':
-        q = ustin[12]
+        q = ustin[14]
         barligi = '<b>1 AX (O\'ZB)  KESTESI: </b>\n'
 
     if topar == '1 RI (o\'zb)':
-        q = ustin[13]
+        q = ustin[15]
         barligi = '<b>1 RI (O\'ZB) KESTESI: </b>\n'
 
     if topar == '1 KI (rus)':
-        q = ustin[14]
+        q = ustin[16]
         barligi = '<b>1 KI (RUS) KESTESI: </b>\n'
 
     if topar == '1 AT (rus)':
-        q = ustin[15]
+        q = ustin[17]
         barligi = '<b>1 AT (RUS) KESTESI: </b>\n'
 
+    if topar == '1 MT (rus)':
+        q = ustin[18]
+        barligi = '<b>1 MT (RUS) KESTESI: </b>\n'
+
     if topar == '1 DI (rus)':
-        q = ustin[16]
+        q = ustin[19]
         barligi = '<b>1 DI (RUS) KESTESI: </b>\n'
 
     if topar == '1 KT (rus)':
-        q = ustin[17]
+        q = ustin[20]
         barligi = '<b>1 KT (RUS) KESTESI: </b>\n'
 
     if topar == '1 Tel (rus)':
-        q = ustin[18]
+        q = ustin[21]
         barligi = '<b>1 Tel (RUS) KESTESI: </b>\n'
 
     if topar == '1 AX (rus)':
-        q = ustin[19]
+        q = ustin[22]
         barligi = '<b>1 AX (RUS) KESTESI: </b>\n'
 
     if topar == '1 RI (rus)':
-        q = ustin[20]
+        q = ustin[23]
         barligi = '<b>1 RI (RUS) KESTESI: </b>\n'
 
 # 2 - kurs
@@ -126,53 +138,65 @@ def keste(topar, kurs):
         q = ustin[5]
         barligi = '<b>2 AX (QQ) KESTESI: </b>\n'
 
-    if topar == '2 KI (o\'zb)':
+    if topar == '2 RI (qq)':
         q = ustin[6]
+        barligi = '<b>2 RI (QQ) KESTESI: </b>\n'
+
+    if topar == '2 KI (o\'zb)':
+        q = ustin[7]
         barligi = '<b>2 KI (O\'ZB) KESTESI: </b>\n'
 
     if topar == '2 AT (o\'zb)':
-        q = ustin[7]
+        q = ustin[8]
         barligi = '<b>2 AT (O\'ZB) KESTESI: </b>\n'
 
     if topar == '2 DI (o\'zb)':
-        q = ustin[8]
+        q = ustin[9]
         barligi = '<b>2 DI (O\'ZB) KESTESI: </b>\n'
 
     if topar == '2 KT (o\'zb)':
-        q = ustin[9]
+        q = ustin[10]
         barligi = '<b>2 KT (O\'ZB) KESTESI: </b>\n'
 
     if topar == '2 Tel (o\'zb)':
-        q = ustin[10]
+        q = ustin[11]
         barligi = '<b>2 Tel (O\'ZB) KESTESI: </b>\n'
 
     if topar == '2 AX (o\'zb)':
-        q = ustin[11]
+        q = ustin[12]
         barligi = '<b>2 AX (O\'ZB)  KESTESI: </b>\n'
 
+    if topar == '2 RI (o\'zb)':
+        q = ustin[13]
+        barligi = '<b>2 RI (O\'ZB)  KESTESI: </b>\n'
+
     if topar == '2 KI (rus)':
-        q = ustin[12]
+        q = ustin[14]
         barligi = '<b>2 KI (RUS) KESTESI: </b>\n'
 
     if topar == '2 AT (rus)':
-        q = ustin[13]
+        q = ustin[15]
         barligi = '<b>2 AT (RUS) KESTESI: </b>\n'
 
     if topar == '2 DI (rus)':
-        q = ustin[14]
+        q = ustin[16]
         barligi = '<b>2 DI (RUS) KESTESI: </b>\n'
 
     if topar == '2 KT (rus)':
-        q = ustin[15]
+        q = ustin[17]
         barligi = '<b>2 KT (RUS) KESTESI: </b>\n'
 
     if topar == '2 Tel (rus)':
-        q = ustin[16]
+        q = ustin[18]
         barligi = '<b>2 Tel (RUS) KESTESI: </b>\n'
 
     if topar == '2 AX (rus)':
-        q = ustin[17]
+        q = ustin[19]
         barligi = '<b>2 AX (RUS) KESTESI: </b>\n'
+
+    if topar == '2 RI (rus)':
+        q = ustin[20]
+        barligi = '<b>2 RI (RUS) KESTESI: </b>\n'
 
 # 3 - kurs
 
@@ -383,4 +407,4 @@ def keste(topar, kurs):
         return barligi
 
 
-print(keste('1 RI (rus)',1))
+#print(keste('1 RI (rus)',1))
