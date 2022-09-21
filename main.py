@@ -41,14 +41,15 @@ def talaba_ustoz(message):
     if get_message_bot == "ustoz":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=False, row_width=2, one_time_keyboard=True)
         btn1 = types.KeyboardButton('Dasturiy injiniring')
-        btn2 = types.KeyboardButton('Axborot texnologiyalari')
+        btn2 = types.KeyboardButton('Kompyuter tizimlari')
         btn3 = types.KeyboardButton('Axborot xavfsizligi')
-        btn4 = types.KeyboardButton('Axborot ta\'lim texnologiyalari')
-        btn5 = types.KeyboardButton('Kompyuter tizimlari')
+        btn4 = types.KeyboardButton('Axborot texnologiyalari')
+        btn5 = types.KeyboardButton('Axborot ta\'lim texnologiyalari')
         btn6 = types.KeyboardButton('Tabiiy va aniq fanlar')
-        btn7 = types.KeyboardButton('Telekommunikatsiya injiniringi')
-        btn8 = types.KeyboardButton('O\'zbek va chet tillari')
-        markup.add(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8)
+        btn7 = types.KeyboardButton('Raqamli texnologiyalar va iqtisodiyot')
+        btn8 = types.KeyboardButton('Telekommunikatsiya injiniringi')
+        btn9 = types.KeyboardButton('O\'zbek va chet tillari')
+        markup.add(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
         start_handler = f"<b> Kafedrani tanlang: </b>"
         bot.send_message(message.chat.id, start_handler, parse_mode='html', reply_markup=markup)
         bot.register_next_step_handler(message, kafedra)
@@ -68,22 +69,22 @@ def kafedra(message):
     if get_message_bot == 'Dasturiy injiniring':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=False, row_width=2, one_time_keyboard=True)
         btn1 = types.KeyboardButton('проф. Утеулиев Н.Н.')
-        btn2 = types.KeyboardButton('доц. Бурханов Ш')
-        btn3 = types.KeyboardButton('асс. Кудайбергенов Ж')
-        btn4 = types.KeyboardButton('асс.Бегилов Б')
-        btn5 = types.KeyboardButton('асс. Мадреймова З')
-        btn6 = types.KeyboardButton('асс. Пиримбетов А')
-        btn7 = types.KeyboardButton('асс. Ядгаров Ш')
-        btn8 = types.KeyboardButton('асс. Сейтимбетов Д')
-        btn9 = types.KeyboardButton('асс. Калмуратов Б')
-        btn10 = types.KeyboardButton('асс. Сагидуллаев Н')
-        btn11 = types.KeyboardButton('асс. Орынбаев А')
-        btn12 = types.KeyboardButton('асс. Вайсова У')
-        btn13 = types.KeyboardButton('асс. Тилепова Абадан')
-        btn14 = types.KeyboardButton('асс. Примбетов А')
-        btn15 = types.KeyboardButton('асс. Мамутова А')
-        btn16 = types.KeyboardButton('асс. Жарылкаганов Б')
-        btn17 = types.KeyboardButton('асс. Даулетназаров Ж')
+        btn2 = types.KeyboardButton('доц. Бурханов Ш.')
+        btn3 = types.KeyboardButton('асс. Худайбергенов Ж.')
+        btn4 = types.KeyboardButton('асс. Бегилов Б.')
+        btn5 = types.KeyboardButton('асс. Мадреймова З.')
+        btn6 = types.KeyboardButton('асс. Пиримбетов А.')
+        btn7 = types.KeyboardButton('асс. Ядгаров Ш.')
+        btn8 = types.KeyboardButton('асс. Сейтимбетов Д.')
+        btn9 = types.KeyboardButton('асс. Калмуратов Б.')
+        btn10 = types.KeyboardButton('асс. Сагидуллаев Н.')
+        btn11 = types.KeyboardButton('асс. Орынбаев А.')
+        btn12 = types.KeyboardButton('асс.Вайсова У.')
+        btn13 = types.KeyboardButton('асс. Тилепова А.')
+        btn14 = types.KeyboardButton('асс. Примбетов А.')
+        btn15 = types.KeyboardButton('асс. Мамутова А.')
+        btn16 = types.KeyboardButton('асс. Жарылканов Б.')
+        btn17 = types.KeyboardButton('асс. Даулетназаров Ж.')
         markup.add(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15, btn16, btn17)
         start_handler = f"<b> Tanlang: </b>"
         bot.send_message(message.chat.id, start_handler, parse_mode='html', reply_markup=markup)
@@ -105,25 +106,28 @@ def topar(message):
         btn1 = types.KeyboardButton('1 KI (qq)')
         btn2 = types.KeyboardButton('1 AT (qq)')
         btn3 = types.KeyboardButton('1 DI (qq)')
-        btn4 = types.KeyboardButton('1 KT (qq)')
-        btn5 = types.KeyboardButton('1 Tel (qq)')
-        btn6 = types.KeyboardButton('1 AX (qq)')
-        btn7 = types.KeyboardButton('1 RI (qq)')
-        btn8 = types.KeyboardButton('1 KI (o\'zb)')
-        btn9 = types.KeyboardButton('1 AT (o\'zb)')
-        btn10 = types.KeyboardButton('1 DI (o\'zb)')
-        btn11 = types.KeyboardButton('1 KT (o\'zb)')
-        btn12 = types.KeyboardButton('1 Tel (o\'zb)')
-        btn13 = types.KeyboardButton('1 AX (o\'zb)')
-        btn14 = types.KeyboardButton('1 RI (o\'zb)')
-        btn15 = types.KeyboardButton('1 KI (rus)')
-        btn16 = types.KeyboardButton('1 AT (rus)')
-        btn17 = types.KeyboardButton('1 DI (rus)')
-        btn18 = types.KeyboardButton('1 KT (rus)')
-        btn19 = types.KeyboardButton('1 Tel (rus)')
-        btn20 = types.KeyboardButton('1 AX (rus)')
-        btn21 = types.KeyboardButton('1 RI (rus)')
-        markup.add(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16,btn17,btn18,btn19,btn20,btn21)
+        btn4 = types.KeyboardButton('1 MT (qq)')
+        btn5 = types.KeyboardButton('1 KT (qq)')
+        btn6 = types.KeyboardButton('1 Tel (qq)')
+        btn7 = types.KeyboardButton('1 AX (qq)')
+        btn8 = types.KeyboardButton('1 RI (qq)')
+        btn9 = types.KeyboardButton('1 KI (o\'zb)')
+        btn10 = types.KeyboardButton('1 AT (o\'zb)')
+        btn11 = types.KeyboardButton('1 DI (o\'zb)')
+        btn12 = types.KeyboardButton('1 MT (o\'zb)')
+        btn13 = types.KeyboardButton('1 KT (o\'zb)')
+        btn14 = types.KeyboardButton('1 Tel (o\'zb)')
+        btn15 = types.KeyboardButton('1 AX (o\'zb)')
+        btn16 = types.KeyboardButton('1 RI (o\'zb)')
+        btn17 = types.KeyboardButton('1 KI (rus)')
+        btn18 = types.KeyboardButton('1 AT (rus)')
+        btn19 = types.KeyboardButton('1 MT (rus)')
+        btn20 = types.KeyboardButton('1 DI (rus)')
+        btn21 = types.KeyboardButton('1 KT (rus)')
+        btn22 = types.KeyboardButton('1 Tel (rus)')
+        btn23 = types.KeyboardButton('1 AX (rus)')
+        btn24 = types.KeyboardButton('1 RI (rus)')
+        markup.add(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16,btn17,btn18,btn19,btn20,btn21,btn22,btn23,btn24)
         send_mess = f"<b> Guruh tanlang:</b>"
         bot.send_message(message.chat.id, send_mess, parse_mode='html', reply_markup=markup)
         bot.register_next_step_handler(message, juwap)
@@ -137,22 +141,22 @@ def topar(message):
         btn4 = types.KeyboardButton('2 KT (qq)')
         btn5 = types.KeyboardButton('2 Tel (qq)')
         btn6 = types.KeyboardButton('2 AX (qq)')
-        #btn7 = types.KeyboardButton('1 RI (qq)')
+        btn7 = types.KeyboardButton('2 RI (qq)')
         btn8 = types.KeyboardButton('2 KI (o\'zb)')
         btn9 = types.KeyboardButton('2 AT (o\'zb)')
         btn10 = types.KeyboardButton('2 DI (o\'zb)')
         btn11 = types.KeyboardButton('2 KT (o\'zb)')
         btn12 = types.KeyboardButton('2 Tel (o\'zb)')
         btn13 = types.KeyboardButton('2 AX (o\'zb)')
-        #btn14 = types.KeyboardButton('1 RI (o\'zb)')
+        btn14 = types.KeyboardButton('2 RI (o\'zb)')
         btn15 = types.KeyboardButton('2 KI (rus)')
         btn16 = types.KeyboardButton('2 AT (rus)')
         btn17 = types.KeyboardButton('2 DI (rus)')
         btn18 = types.KeyboardButton('2 KT (rus)')
         btn19 = types.KeyboardButton('2 Tel (rus)')
         btn20 = types.KeyboardButton('2 AX (rus)')
-        #btn21 = types.KeyboardButton('1 RI (rus)')
-        markup.add(btn1,btn2,btn3,btn4,btn5,btn6,btn8,btn9,btn10,btn11,btn12,btn13,btn15,btn16,btn17,btn18,btn19,btn20)
+        btn21 = types.KeyboardButton('2 RI (rus)')
+        markup.add(btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15,btn16,btn17,btn18,btn19,btn20,btn21)
         send_mess = f"<b> Guruh tanlang:</b>"
         bot.send_message(message.chat.id, send_mess, parse_mode='html', reply_markup=markup)
         bot.register_next_step_handler(message, juwap)
@@ -240,6 +244,14 @@ def juwap(message):
 
         markup = types.ReplyKeyboardRemove(selective=False)
 
+
+    if button_text == '1 MT (qq)':
+        bot.send_message(message.chat.id, keste(button_text, 1) + tekst,
+                         reply_markup=types.ReplyKeyboardRemove(selective=False),
+                         parse_mode='html')
+
+        markup = types.ReplyKeyboardRemove(selective=False)
+
     if button_text == '1 KT (qq)':
         bot.send_message(message.chat.id, keste(button_text, 1) + tekst,
                          reply_markup=types.ReplyKeyboardRemove(selective=False),
@@ -289,6 +301,13 @@ def juwap(message):
 
         markup = types.ReplyKeyboardRemove(selective=False)
 
+    if button_text == '1 MT (o\'zb)':
+        bot.send_message(message.chat.id, keste(button_text, 1) + tekst,
+                         reply_markup=types.ReplyKeyboardRemove(selective=False),
+                         parse_mode='html')
+
+        markup = types.ReplyKeyboardRemove(selective=False)
+
     if button_text == '1 KT (o\'zb)':
         bot.send_message(message.chat.id, keste(button_text, 1) + tekst,
                          reply_markup=types.ReplyKeyboardRemove(selective=False),
@@ -325,6 +344,13 @@ def juwap(message):
         markup = types.ReplyKeyboardRemove(selective=False)
 
     if button_text == '1 AT (rus)':
+        bot.send_message(message.chat.id, keste(button_text, 1) + tekst,
+                         reply_markup=types.ReplyKeyboardRemove(selective=False),
+                         parse_mode='html')
+
+        markup = types.ReplyKeyboardRemove(selective=False)
+
+    if button_text == '1 MT (rus)':
         bot.send_message(message.chat.id, keste(button_text, 1) + tekst,
                          reply_markup=types.ReplyKeyboardRemove(selective=False),
                          parse_mode='html')
@@ -411,6 +437,12 @@ def juwap(message):
 
         markup = types.ReplyKeyboardRemove(selective=False)
 
+    if button_text == '2 RI (qq)':
+        bot.send_message(message.chat.id, keste(button_text, 2) + tekst,
+                         reply_markup=types.ReplyKeyboardRemove(selective=False),
+                         parse_mode='html')
+
+        markup = types.ReplyKeyboardRemove(selective=False)
 
     if button_text == '2 KI (o\'zb)':
         bot.send_message(message.chat.id, keste(button_text, 2) + tekst,
@@ -454,6 +486,12 @@ def juwap(message):
 
         markup = types.ReplyKeyboardRemove(selective=False)
 
+    if button_text == '2 RI (o\'zb)':
+        bot.send_message(message.chat.id, keste(button_text, 2) + tekst,
+                         reply_markup=types.ReplyKeyboardRemove(selective=False),
+                         parse_mode='html')
+
+        markup = types.ReplyKeyboardRemove(selective=False)
 
     if button_text == '2 KI (rus)':
         bot.send_message(message.chat.id, keste(button_text, 2) + tekst,
@@ -497,7 +535,12 @@ def juwap(message):
 
         markup = types.ReplyKeyboardRemove(selective=False)
 
+    if button_text == '2 RI (rus)':
+        bot.send_message(message.chat.id, keste(button_text, 2) + tekst,
+                         reply_markup=types.ReplyKeyboardRemove(selective=False),
+                         parse_mode='html')
 
+        markup = types.ReplyKeyboardRemove(selective=False)
 
 
 # 3-kurslar
@@ -763,23 +806,6 @@ def juwap(message):
                          parse_mode='html')
 
         markup = types.ReplyKeyboardRemove(selective=False)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @server.route('/' + TOKEN, methods=['POST'])
