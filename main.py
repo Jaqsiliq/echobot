@@ -60,7 +60,8 @@ def kafedra(message):
     if get_message_bot == 'Axborot ta\'lim texnologiyalari':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=False, row_width=2, one_time_keyboard=True)
         btn1 = types.KeyboardButton('Есбергенов Х')
-        btn2 = types.KeyboardButton('асс. Хожаниязова С')
+        btn2 = types.KeyboardButton('асс. Тлеуов К.')
+        
         markup.add(btn1, btn2)
         start_handler = f"<b> Tanlang: </b>"
         bot.send_message(message.chat.id, start_handler, parse_mode='html', reply_markup=markup)
@@ -806,7 +807,6 @@ def juwap(message):
                          parse_mode='html')
 
         markup = types.ReplyKeyboardRemove(selective=False)
-
 
 @server.route('/' + TOKEN, methods=['POST'])
 def get_message():
