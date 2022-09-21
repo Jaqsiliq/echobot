@@ -5,7 +5,7 @@ from bos_nomer_orni import bos_nomer_orni
 from sabaq_joqpa import sabaq_joqpa
 
 def mug_izlew(ustaz):
-    ustin = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43]
+    ustin = [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
     hapte_sanlari_1 = [8, 16, 24, 32, 40]
     hapte_kunleri = ["<b>1️⃣-Dushanba:</b>\n", "<b>2️⃣-Seshanba:</b>\n", "<b>3️⃣-Chorshanba:</b>\n", "<b>4️⃣-Payshanba:</b>\n", "<b>5️⃣-Juma:</b>\n"]
     barligi = "<b> TATU NF Ustozlar </b>\n"
@@ -34,57 +34,66 @@ def mug_izlew(ustaz):
                             barligi += '<b>1 DI (QQ) : </b>\n'
 
                         if q == 9:
-                            barligi += '<b>1 KT (QQ) : </b>\n'
+                            barligi += '<b>1 MT (QQ) : </b>\n'
 
                         if q == 11:
-                            barligi += '<b>1 Tel (QQ) : </b>\n'
+                            barligi += '<b>1 KT (QQ) : </b>\n'
 
                         if q == 13:
-                            barligi += '<b>1 AX (QQ) : </b>\n'
+                            barligi += '<b>1 Tel (QQ) : </b>\n'
 
                         if q == 15:
-                            barligi += '<b>1 RI (QQ) : </b>\n'
+                            barligi += '<b>1 AX (QQ) : </b>\n'
 
                         if q == 17:
-                            barligi += '<b>1 KI (O\'ZB) : </b>\n'
+                            barligi += '<b>1 RI (QQ) : </b>\n'
 
                         if q == 19:
-                            barligi += '<b>1 AT (O\'ZB) : </b>\n'
+                            barligi += '<b>1 KI (O\'ZB) : </b>\n'
 
                         if q == 21:
-                            barligi += '<b>1 DI (O\'ZB) : </b>\n'
+                            barligi += '<b>1 AT (O\'ZB) : </b>\n'
 
                         if q == 23:
-                            barligi += '<b>1 KT (O\'ZB) : </b>\n'
+                            barligi += '<b>1 DI (O\'ZB) : </b>\n'
 
                         if q == 25:
-                            barligi += '<b>1 Tel (O\'ZB) : </b>\n'
+                            barligi += '<b>1 MT (O\'ZB) : </b>\n'
 
                         if q == 27:
-                            barligi += '<b>1 AX (O\'ZB)  : </b>\n'
+                            barligi += '<b>1 KT (O\'ZB) : </b>\n'
 
                         if q == 29:
-                            barligi += '<b>1 RI (O\'ZB) : </b>\n'
+                            barligi += '<b>1 Tel (O\'ZB) : </b>\n'
 
                         if q == 31:
-                            barligi += '<b>1 KI (RUS) : </b>\n'
+                            barligi += '<b>1 AX (O\'ZB)  : </b>\n'
 
                         if q == 33:
-                            barligi += '<b>1 AT (RUS) : </b>\n'
+                            barligi += '<b>1 RI (O\'ZB) : </b>\n'
 
                         if q == 35:
-                            barligi += '<b>1 DI (RUS) : </b>\n'
+                            barligi += '<b>1 KI (RUS) : </b>\n'
 
                         if q == 37:
-                            barligi += '<b>1 KT (RUS) : </b>\n'
+                            barligi += '<b>1 AT (RUS) : </b>\n'
 
                         if q == 39:
-                            barligi += '<b>1 Tel (RUS) : </b>\n'
+                            barligi += '<b>1 MT (RUS) : </b>\n'
 
                         if q == 41:
-                            barligi += '<b>1 AX (RUS) : </b>\n'
+                            barligi += '<b>1 DI (RUS) : </b>\n'
 
                         if q == 43:
+                            barligi += '<b>1 KT (RUS) : </b>\n'
+
+                        if q == 45:
+                            barligi += '<b>1 Tel (RUS) : </b>\n'
+
+                        if q == 47:
+                            barligi += '<b>1 AX (RUS) : </b>\n'
+
+                        if q == 49:
                             barligi += '<b>1 RI (RUS) : </b>\n'
 
                         barligi += bos_sabaq_ati(x, q, 1) + "\n" + pan_mugalimi(x, q,1) + bos_nomer_orni(x, q,1) + "\n"
@@ -93,7 +102,7 @@ def mug_izlew(ustaz):
 
 
                 #2-kurs
-                if q <= 37:
+                if q <= 43:
                     if sabaq_joqpa(x, q, 2) == 1:
 
                         a = str(pan_mugalimi(x, q, 2)).lower()
@@ -119,40 +128,49 @@ def mug_izlew(ustaz):
                                 barligi += '<b>2 AX (QQ) : </b>\n'
 
                             if q == 15:
-                                barligi += '<b>2 KI (O\'ZB) : </b>\n'
+                                barligi += '<b>2 RI (QQ) : </b>\n'
 
                             if q == 17:
-                                barligi += '<b>2 AT (O\'ZB) : </b>\n'
+                                barligi += '<b>2 KI (O\'ZB) : </b>\n'
 
                             if q == 19:
-                                barligi += '<b>2 DI (O\'ZB) : </b>\n'
+                                barligi += '<b>2 AT (O\'ZB) : </b>\n'
 
                             if q == 21:
-                                barligi += '<b>2 KT (O\'ZB) : </b>\n'
+                                barligi += '<b>2 DI (O\'ZB) : </b>\n'
 
                             if q == 23:
-                                barligi += '<b>2 Tel (O\'ZB) : </b>\n'
+                                barligi += '<b>2 KT (O\'ZB) : </b>\n'
 
                             if q == 25:
-                                barligi += '<b>2 AX (O\'ZB)  : </b>\n'
+                                barligi += '<b>2 Tel (O\'ZB) : </b>\n'
 
                             if q == 27:
-                                barligi += '<b>2 KI (RUS) : </b>\n'
+                                barligi += '<b>2 AX (O\'ZB)  : </b>\n'
 
                             if q == 29:
-                                barligi += '<b>2 AT (RUS) : </b>\n'
+                                barligi += '<b>2 RI (O\'ZB)  : </b>\n'
 
                             if q == 31:
-                                barligi += '<b>2 DI (RUS) : </b>\n'
+                                barligi += '<b>2 KI (RUS) : </b>\n'
 
                             if q == 33:
-                                barligi += '<b>2 KT (RUS) : </b>\n'
+                                barligi += '<b>2 AT (RUS) : </b>\n'
 
                             if q == 35:
-                                barligi += '<b>2 Tel (RUS) : </b>\n'
+                                barligi += '<b>2 DI (RUS) : </b>\n'
 
                             if q == 37:
+                                barligi += '<b>2 KT (RUS) : </b>\n'
+
+                            if q == 39:
+                                barligi += '<b>2 Tel (RUS) : </b>\n'
+
+                            if q == 41:
                                 barligi += '<b>2 AX (RUS) : </b>\n'
+
+                            if q == 43:
+                                barligi += '<b>2 RI (RUS) : </b>\n'
 
                             barligi += bos_sabaq_ati(x, q, 2) + "\n" + pan_mugalimi(x, q, 2) + bos_nomer_orni(x, q,2) + "\n"
                             mug = mug + 1
