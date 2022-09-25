@@ -1,9 +1,9 @@
 fayl_ati_1 = '1-курс.xls'
 list_ati_1 = '(1-курс Гузги)'
 fayl_ati_2 = '2-курс.xls'
-list_ati_2 = '(2 курс Гузги)'
+list_ati_2 = '(2-курс)'
 fayl_ati_3 = '3-курс.xls'
 list_ati_3 = '(3 курс Гузги)'
 fayl_ati_4 = '4-курс.xls'
 list_ati_4 = '(4 курс Гузги)'
-janalangan_waqit = "12.09.2022"
+janalangan_waqit = "25.09.2022"
